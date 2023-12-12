@@ -18,4 +18,4 @@
 ## Changelog
 **If you find Bugs, please [report them.](https://github.com/KiSki-Dev/WarLands/issues)**
 
-**[The Changelog of each Version you can find here.](https://github.com/KiSki-Dev/WarLands/blob/master/CHANGELOG.md)**
+**[The Changelog of each Version you can find here.](https://github.com/KiSki-Dev/WarLands/blob/master/Changelog.md)**
