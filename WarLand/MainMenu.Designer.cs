@@ -36,16 +36,17 @@
             buttonExit = new Button();
             bgButtons = new Panel();
             panelMain = new Panel();
+            bgButtons.SuspendLayout();
             SuspendLayout();
             // 
             // labelHeader
             // 
             labelHeader.FlatStyle = FlatStyle.Flat;
-            labelHeader.Font = new Font("Myanmar Text", 90F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelHeader.Font = new Font("Myanmar Text", 95.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelHeader.ForeColor = Color.White;
             labelHeader.Location = new Point(0, 0);
             labelHeader.Name = "labelHeader";
-            labelHeader.Size = new Size(1250, 138);
+            labelHeader.Size = new Size(1281, 187);
             labelHeader.TabIndex = 0;
             labelHeader.Text = "WarLands";
             labelHeader.TextAlign = ContentAlignment.MiddleCenter;
@@ -54,11 +55,12 @@
             // buttonHelp
             // 
             buttonHelp.Anchor = AnchorStyles.Left;
+            buttonHelp.AutoSize = true;
             buttonHelp.BackColor = Color.FromArgb(62, 180, 137);
             buttonHelp.FlatStyle = FlatStyle.Flat;
-            buttonHelp.Location = new Point(0, 457);
+            buttonHelp.Location = new Point(11, 330);
             buttonHelp.Name = "buttonHelp";
-            buttonHelp.Size = new Size(283, 73);
+            buttonHelp.Size = new Size(324, 87);
             buttonHelp.TabIndex = 6;
             buttonHelp.Text = "Help";
             buttonHelp.UseVisualStyleBackColor = false;
@@ -67,11 +69,12 @@
             // buttonSettings
             // 
             buttonSettings.Anchor = AnchorStyles.Left;
+            buttonSettings.AutoSize = true;
             buttonSettings.BackColor = Color.FromArgb(62, 180, 137);
             buttonSettings.FlatStyle = FlatStyle.Flat;
-            buttonSettings.Location = new Point(0, 373);
+            buttonSettings.Location = new Point(11, 231);
             buttonSettings.Name = "buttonSettings";
-            buttonSettings.Size = new Size(283, 73);
+            buttonSettings.Size = new Size(324, 87);
             buttonSettings.TabIndex = 7;
             buttonSettings.Text = "Settings";
             buttonSettings.UseVisualStyleBackColor = false;
@@ -80,11 +83,12 @@
             // buttonInv
             // 
             buttonInv.Anchor = AnchorStyles.Left;
+            buttonInv.AutoSize = true;
             buttonInv.BackColor = Color.FromArgb(62, 180, 137);
             buttonInv.FlatStyle = FlatStyle.Flat;
-            buttonInv.Location = new Point(0, 289);
+            buttonInv.Location = new Point(11, 133);
             buttonInv.Name = "buttonInv";
-            buttonInv.Size = new Size(283, 73);
+            buttonInv.Size = new Size(324, 87);
             buttonInv.TabIndex = 8;
             buttonInv.Text = "Inventory";
             buttonInv.UseVisualStyleBackColor = false;
@@ -93,11 +97,12 @@
             // buttonPlay
             // 
             buttonPlay.Anchor = AnchorStyles.Left;
+            buttonPlay.AutoSize = true;
             buttonPlay.BackColor = Color.FromArgb(62, 180, 137);
             buttonPlay.FlatStyle = FlatStyle.Flat;
-            buttonPlay.Location = new Point(0, 205);
+            buttonPlay.Location = new Point(11, 18);
             buttonPlay.Name = "buttonPlay";
-            buttonPlay.Size = new Size(283, 73);
+            buttonPlay.Size = new Size(324, 87);
             buttonPlay.TabIndex = 9;
             buttonPlay.Text = "Play";
             buttonPlay.UseVisualStyleBackColor = false;
@@ -106,11 +111,12 @@
             // buttonExit
             // 
             buttonExit.Anchor = AnchorStyles.Left;
+            buttonExit.AutoSize = true;
             buttonExit.BackColor = Color.FromArgb(62, 180, 137);
             buttonExit.FlatStyle = FlatStyle.Flat;
-            buttonExit.Location = new Point(0, 541);
+            buttonExit.Location = new Point(11, 431);
             buttonExit.Name = "buttonExit";
-            buttonExit.Size = new Size(283, 73);
+            buttonExit.Size = new Size(324, 87);
             buttonExit.TabIndex = 10;
             buttonExit.Text = "Exit";
             buttonExit.UseVisualStyleBackColor = false;
@@ -118,10 +124,17 @@
             // 
             // bgButtons
             // 
+            bgButtons.Anchor = AnchorStyles.Left;
+            bgButtons.AutoSize = true;
             bgButtons.BackColor = Color.FromArgb(24, 28, 39);
-            bgButtons.Location = new Point(0, 190);
+            bgButtons.Controls.Add(buttonPlay);
+            bgButtons.Controls.Add(buttonHelp);
+            bgButtons.Controls.Add(buttonInv);
+            bgButtons.Controls.Add(buttonExit);
+            bgButtons.Controls.Add(buttonSettings);
+            bgButtons.Location = new Point(0, 170);
             bgButtons.Name = "bgButtons";
-            bgButtons.Size = new Size(293, 437);
+            bgButtons.Size = new Size(346, 528);
             bgButtons.TabIndex = 11;
             // 
             // panelMain
@@ -137,24 +150,22 @@
             AutoScaleMode = AutoScaleMode.None;
             AutoSize = true;
             BackColor = Color.FromArgb(44, 44, 49);
-            ClientSize = new Size(1250, 639);
+            ClientSize = new Size(1264, 681);
             Controls.Add(panelMain);
-            Controls.Add(buttonExit);
-            Controls.Add(buttonPlay);
-            Controls.Add(buttonInv);
-            Controls.Add(buttonSettings);
-            Controls.Add(buttonHelp);
             Controls.Add(labelHeader);
             Controls.Add(bgButtons);
             Font = new Font("Verdana", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            HelpButton = true;
             Name = "MainMenu";
-            ShowIcon = false;
+            SizeGripStyle = SizeGripStyle.Show;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "WarLands";
             WindowState = FormWindowState.Maximized;
+            bgButtons.ResumeLayout(false);
+            bgButtons.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
