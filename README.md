@@ -1,3 +1,7 @@
+# This Project has been Canceled due to the Abilities of WinForms!
+## I will continue this Game in Unity
+### For Updates, Join my Discord Server!
+
 
 # WarLands
 **is a game, in what you have to capture Lands by rolling a Dice.**
